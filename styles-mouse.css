@@ -159,8 +159,7 @@ hr {
 
 /*column*/
 .column-mid {
-    width: 70vw;
-    height: 2680px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -213,7 +212,7 @@ hr {
 
 .mouse-text-button:hover {
     background-color: rgb(125, 98, 87);
-    color: rgb(255, 239, 224);
+    color: rgb(216, 193, 181);
 }
 
 /*maze info nav bar*/
@@ -222,8 +221,9 @@ hr {
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    background-color: #213555;
+    background-color: #778d9c;
     height: 105px;
+    border-radius: 10px;
 }
 
 .pixel-navigation-links ul {
@@ -242,7 +242,7 @@ hr {
 
 .pixel-navigation-links li a {
     text-decoration: none;
-    color: #778d9c;
+    color: rgb(216, 193, 181);
     padding: 42px 60px;
     display: flex;
     align-items: center;
@@ -253,10 +253,16 @@ hr {
 }
 
 
+
 .pixel-navigation-links li:hover {
-    background-color: #778d9c;
-    transform: translateY(-4px);
+    background-color: rgb(216, 193, 181);
+
     transition: background-color 0.3s ease;
+
+    .pixel-navigation-links li a {
+        transform: translateY(-4px);
+    }
+    
 }
     
 
@@ -356,10 +362,21 @@ hr {
 .pixel-container { /*content-item*/
     background-color: rgb(216, 193, 181);
     display: none;
+    border-radius: 10px;
 }
 
 
 
 .pixel-container.active {
     display: block;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: rgb(216, 193, 181);
+}
+
+.newsletter-form button {
+    background-color: rgb(216, 193, 181);
+    cursor: pointer;
+    color: #213555;
 }

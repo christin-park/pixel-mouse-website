@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lectures | TAMU IEEE Game Controllers</title>
+    <title>Pixel Mouse | TAMU IEEE Game Controllers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
@@ -40,9 +40,8 @@
                 but there are other buttons that you can implement to help you reach a a better time.
                 The timer begins with the first instance of player movement, and teams
                 will compete for the fastest average maze completion between 3 maze levels.
-                
             </p>
-            <a class="mouse-text-button" href="#">Download Game</a>
+            <a class="mouse-text-button" href="#">Download Demo</a>
         </div>
         <div>
             <img class="mouse-image" src="images/pixelMouseLarge.png">
@@ -61,9 +60,8 @@
             <div class="pixel-navigation-links">
                 <ul>
                     <li class="hidden-nav">Maze Hotkeys</li>
-                    <li class="hidden-nav">Maze Levels</li>
+                    <li class="hidden-nav">Button Behavior</li>
                     <li class="hidden-nav">Maze Info</li>
-                    <li class="hidden-nav">Play web version</li>
                 </ul>
             </div>
         </nav>
@@ -72,7 +70,7 @@
             <p class="pixel-title">Maze Hotkeys</p>
             <div class="row-hotkeys">
                 <div class="one-hotkey">
-                    <img class="hotkey-img" src="images/j-key.png">
+                    <img class="hotkey-img" src="images/a-key.png">
                     <div class="hotkey-text">
                         <p class="hotkey-title">WASD : UP, LEFT, DOWN, RIGHT</p>
                         <p class="hotkey-desc">
@@ -88,7 +86,7 @@
                         <p class="hotkey-title">J : JUMP</p>
                         <p class="hotkey-desc">
                             Allows you to jump over barriers.
-                            The jump duration is 0.5 seconds.
+                            The jump duration is 1.4 seconds.
                         </p>
                     </div>
                 </div>
@@ -124,7 +122,7 @@
                 <div class="one-hotkey">
                     <img class="hotkey-img" src="images/q-key.png">
                     <div class="hotkey-text">
-                        <p class="hotkey-title">Q : TOGGLE ROTATION</p>
+                        <p class="hotkey-title">Q : TOGGLE ROTATION CCW</p>
                         <p class="hotkey-desc">
                             Toggle button that allows you to turn on and off
                             a rotation setting. The rotation rate is 0.3 rev/sec.
@@ -133,38 +131,35 @@
                     </div>
                 </div>
                 <div class="one-hotkey">
-                    <img class="hotkey-img" src="images/f-key.png">
+                    <img class="hotkey-img" src="images/e-key.png">
                     <div class="hotkey-text">
-                        <p class="hotkey-title">F : FORWARD KEY</p>
+                        <p class="hotkey-title">E : TOGGLE ROTATION CW</p>
                         <p class="hotkey-desc">
-                            Go forward based on your current direction.
-                            Useful to use with the 'Q' key.
+                            Toggle button that allows you to turn on and off
+                            a rotation setting. The rotation rate is 0.3 rev/sec.
+                            Useful to use with the 'F' key.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row-hotkeys">
                 <div class="one-hotkey">
-                    <img class="hotkey-img" src="images/y-key.png">
+                    <img class="hotkey-img" src="images/f-key.png">
                     <div class="hotkey-text">
-                        <p class="hotkey-title">Y : SET SPAWNPOINT #1</p>
+                        <p class="hotkey-title">F : FORWARD KEY</p>
                         <p class="hotkey-desc">
-                            Set your spawnpoint to your current location.
-                            This button only works once!
-                            (By implementing both 'Y' and 'U', you can set a new spawnpoint
-                            up to 2 times per run.)
+                            Go forward based on your current direction.
+                            Useful to use with the 'Q' and 'E' keys.
                         </p>
                     </div>
                 </div>
                 <div class="one-hotkey">
                     <img class="hotkey-img" src="images/u-key.png">
                     <div class="hotkey-text">
-                        <p class="hotkey-title">U : SET SPAWNPOINT #2</p>
+                        <p class="hotkey-title">U : SET SPAWNPOINT</p>
                         <p class="hotkey-desc">
                             Set your spawnpoint to your current location.
                             This button only works once!
-                            (By implementing both 'Y' and 'U', you can set a new spawnpoint
-                            up to 2 times per run.)
                         </p>
                     </div>
                 </div>
@@ -175,45 +170,67 @@
         
         <!--maze levels-->
         <div class="pixel-container">
-            <p class="pixel-title">Maze Levels</p>
-            <div class="pixel-container-pics">
-                <div class="pixel-container-pic">
-                    <img src="images/pixelMouse.png">
-                    <p>Level 1</p>
+            <p class="pixel-title">Button Behavior</p>
+            <div class="button-behavior-container">
+                <div class="button-behavior-img">
+                    <img class="hotkey-img" src="images/a-key.png">
+                    <img class="hotkey-img" src="images/f-key.png">
                 </div>
-                <div class="pixel-container-pic">
-                    <img src="images/pixelMouse.png">
-                    <p>Level 1</p>
-                </div>
-                <div class="pixel-container-pic">
-                    <img src="images/pixelMouse.png">
-                    <p>Level 1</p>
-                </div>
+                <p>When the button is pressed, the character should be spammed.</p>
             </div>
+            <div class="button-behavior-container">
+                <div class="button-behavior-img">
+                    <img class="hotkey-img" src="images/j-key.png">
+                </div>
+                <p>
+                    Everytime you press the button, the character should only register once
+                    (Otherwise, the jump mechanic would restart with every new instance of 'J').
+                </p>
+            </div>
+            <div class="button-behavior-container">
+                <div class="button-behavior-img">
+                    <img class="hotkey-img" src="images/r-key.png">
+                    <img class="hotkey-img" src="images/t-key.png">
+                    <img class="hotkey-img" src="images/u-key.png">
+                </div>
+                <p>
+                    When you press the button, the character should only register once.
+                    After the button is pressed once, it can not be triggered again.
+                    (Don't cheat by not setting a limit on the number of resets you can use! D:<)
+                </p>
+            </div>
+            <div class="button-behavior-container">
+                <div class="button-behavior-img">
+                    <img class="hotkey-img" src="images/q-key.png">
+                    <img class="hotkey-img" src="images/e-key.png">
+                </div>
+                <p>
+                    The button should be implemented as a toggle button. When it is pressed once, the
+                    rotation toggle begins. When it is pressed again, the rotation toggle ends.
+                </p>
+            </div>
+            <div class="white-space">&nbsp;</div>
 
         </div>
 
         <!--maze info-->
         <div class="pixel-container">
             <p class="pixel-title">Maze Info</p>
-            <div class="pixel-desc">
-                <img src="images/pixelMouse.png">
-                <p>The colliders of the maps are highlighted in pink.</p>
-            </div>
-            <div class="pixel-desc">
-                <img src="images/pixelMouse.png">
-                <p>
-                    All gameplay will be completed with the game controller. There are portions of the game setup
-                    (entering team name information, number of participating players, etc.) that require
-                    a traditional mouse and keyboard, but the game controller won't be used to complete these actions.
-                </p>
-            </div>
-        </div>
+            <p class="pixel-desc">
+                - There are 2 versions of the maze game. One of which is compatible with a traditional keyboard,
+                and the other being compatible with your arduino game controller. The reason why each
+                input device isn't compatible with the other's game is because the firmware is different.
+                In a traditional keyboard, when you hold down a button, it registers the character once, delays,
+                then spams the character. In your game controller, you will code it based on the button behavior
+                (see button behavior info). The keyboard-compatible demo helps you understand what the expected behavior should be.
+                <br><br><br>
+                - All gameplay will be completed with the game controller. There are portions of the game setup
+                (entering team name information, number of participating players, etc.) that require
+                a traditional mouse and keyboard, but the game controller won't be used to complete these actions.   
+                <br><br><br><!--dont judge mah code lol-->
+            </p>
 
-        <!--play the game :D-->
-        <div class="pixel-container">
-            <p class="pixel-title">Play the public level here!</p>
-            <p>embed through webgl</p>
+            <div class="white-space">&nbsp;</div>   
         </div>
     </div> <!--end of mid col div-->
 
@@ -225,9 +242,9 @@
         <div class="follow-us">
             <p class="form-desc">Follow us:</p>
             <div class="link-img">
-                <a href="https://ieee-tamu.org/" target="_blank"><img src="images/website-icon.png"></a>
-                <a href="https://www.instagram.com/ieee_tamu" target="_blank"><img src="images/instagram-icon.png"></a>
-                <a href="https://www.facebook.com/ieeetamu/" target="_blank"><img src="images/facebook-icon.png"></a>
+                <a href="https://ieee-tamu.org/" target="_blank"><img src="images/website-icon-blue.png"></a>
+                <a href="https://www.instagram.com/ieee_tamu" target="_blank"><img src="images/instagram-icon-blue.png"></a>
+                <a href="https://www.facebook.com/ieeetamu/" target="_blank"><img src="images/facebook-icon-blue.png"></a>
             </div>
         </div>
         <div>

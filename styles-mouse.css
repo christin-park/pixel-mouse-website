@@ -155,6 +155,22 @@ hr {
         display: flex;
     }
 
+    
+
+}
+
+@media (max-width: 1400px) {
+    .mouse-image {
+        max-width: 700px;
+        height: auto;
+    }
+
+    .mouse-main {
+        max-width: 70%;
+        flex-direction: column-reverse;
+        margin: 100px;
+    }
+
 }
 
 /*column*/
@@ -306,21 +322,10 @@ hr {
 }
 
 /*maze level container*/
-
-
 .pixel-title {
     text-align: center;
     font-size: 50px;
     padding-top: 50px;
-}
-
-.pixel-container-pics {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.pixel-container-pic p {
-    background-color: white;
 }
 
 /*maze info*/
@@ -340,8 +345,38 @@ hr {
     width: 300px;
 }
 
+.button-behavior-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
 
+.button-behavior-img {
+    width: 350px;
+}
 
+.button-behavior-container p {
+    width: 53%;
+    font-size: 17px;
+}
+
+.button-behavior-img {
+    transition: transform 0.3s ease;
+}
+
+.button-behavior-container:hover .button-behavior-img {
+    transform: translate(-8px, -8px);
+}
+
+.white-space {
+    height: 50px;
+    width: 40px;
+}
+
+.pixel-desc {
+    width: 80%;
+    font-size: 17px;
+}
 
 
 .newsletter-form button {

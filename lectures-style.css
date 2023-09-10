@@ -127,18 +127,68 @@ hr {
 
     .navigation-links li {
         text-align: center;
-        color: white;
     }
 
     .navigation-links li a{
-        padding: .5rem 1rem;
-        font-size: 100px;
+        font-size: 20px;
     }
 
     .navigation-links.active{
         display: flex;
     }
 
+    .footer {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .footer div {
+        margin: 20px 0;
+    }
+
+    .follow-us {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .header iframe {
+        display: none;
+    }
+
+    .both-comparisons {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* .comparison-image {
+        height: 100px;
+        width: 100px;
+    } */
+
+    .comparison-points {
+        width: 65%;
+    }
+
+    .comparison div img {
+        width: 300px;
+    }
+
+    .calendar-div {
+        flex-direction: column;
+    }
+
+    .calendar-div iframe {
+        width: 100%;
+    }
+
+    .upcoming-events {
+        display: none;
+    }
 }
 
 /*column*/
@@ -160,6 +210,9 @@ hr {
     
 }
 
+.header {
+    width: 98%;
+}
 .main-header {
     display: flex;
     justify-content: left;
@@ -188,7 +241,7 @@ hr {
 
 .main-orange-bar {
     width: 6px;
-    height: 60px;
+    height: 50px;
     background-color: #E9B384;
     margin-right: 12px;
     transform: translateY(15px);
@@ -201,13 +254,10 @@ hr {
 
 .orange-bar {
     width: 6px;
-    height: 60px;
+    height: 50px;
     background-color: #E9B384;
     margin-right: 12px;
     transition: height 0.3s ease;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     
 }
 
@@ -215,13 +265,9 @@ hr {
     margin: 50px 0;
     position: relative;
 }
-.lecture-container:hover .orange-bar {
-    height: 95px;         
-}
-
-.calendar:hover .orange-bar {
-    height: 95px;         
-}
+/* .lecture-container:hover .orange-bar {
+    height: 950px;         
+} */
 
 .lectures-header {
     display: flex;

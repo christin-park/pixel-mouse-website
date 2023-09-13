@@ -415,3 +415,12 @@ hr {
     cursor: pointer;
     color: #213555;
 }
+
+.newsletter-button {
+    background-color: rgb(216, 193, 181);
+}
+
+.newsletter-button a {
+    font-family: Silkscreen;
+    color: #213555;
+}

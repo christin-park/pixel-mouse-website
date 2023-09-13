@@ -22,7 +22,7 @@
             <ul>
                 <li class="test"><a href="index.html"><img src="images/home.png">Home</a></li>
                 <li><a href="getting-started.html"><img src="images/shuttle.png">Getting Started</a></li>
-                <li><a href="lectures.html"><img src="images/page.png">Lectures</a></li>
+                <li><a href="workshops.html"><img src="images/page.png">Workshops</a></li>
                 <li><a href="pixel-mouse.html"><img src="images/game-controller.png">Pixel Mouse</a></li>
                 <li><a href="teams.html"><img src="images/team.png">Teams</a></li>
             </ul>
@@ -130,20 +130,14 @@
                 Want to sign up for updates? (This newsletter gives updates on all<br>
                 TAMU IEEE activities, so it is not specific to the game controllers project.)
             </p>
-            <form class="newsletter-form" action="process-subscription.php" method="post">
+            <button class="newsletter-button"><a  href="https://ieee-tamu.org/join-now" target="_blank">Subscribe to our Newsletter</a></button>
+            <!-- <form class="newsletter-form" action="process-subscription.php" method="post">
                 <input type="email" name="email" placeholder="Enter email..." required>
                 <button type="submit">Subscribe</button>
-            </form>
+            </form> -->
         </div>
         
     </div>
-
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = $_POST["addemailtonewsletter"];
-}
-    ?>
-
     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 
     

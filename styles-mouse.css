@@ -155,6 +155,16 @@ hr {
         display: flex;
     }
 
+    .footer {
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-evenly;
+    }
+
+    .last-info {
+        text-align: center;
+    }
+
     
 
 }
@@ -184,8 +194,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85vw;
-    height: 75vh;
+    max-width: 1600px;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 200px;

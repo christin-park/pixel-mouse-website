@@ -102,7 +102,7 @@ hr {
     height: 3px;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 @media (max-width: 1300px) {
@@ -112,7 +112,14 @@ hr {
     
     .navigation-links {
         display: none;
-        width: 100%;    
+        position: relative;
+        z-index: 10px;
+        width: 100%;
+        background-color: #7C9D96;   
+    }
+
+    .navigation-links li:hover {
+        transform: translateY(0);
     }
 
     .navigation-bar {
@@ -140,10 +147,12 @@ hr {
     .footer {
         flex-direction: column;
         height: 500px;
+        justify-content: space-evenly;
     }
 
-    .footer div {
-        margin: 20px 0;
+    .last-info {
+        text-align: center;
+        padding: 0 25px;
     }
 
     .follow-us {
@@ -184,12 +193,18 @@ hr {
     .upcoming-events {
         display: none;
     }
+
+    .styled-calendar-container {
+        max-width: 80%;
+    }
 }
 
 /*column*/
 .column-mid {
     width: 70%;
     margin: 0 auto;
+    position: relative;
+    z-index: 0;
 }
 
 /*lectures*/
@@ -383,8 +398,9 @@ hr {
 }
 
 .lecture-slides {
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 600px;
+    margin-bottom: 80px;
 }
 
 .lecture-info-boxes {
@@ -491,10 +507,12 @@ hr {
 }
 
 .styled-calendar-container {
-    width: 65%;
+    width: 850px;
     border: none;
     box-shadow: 11px 11px #A1CCD1;
     border-radius: 10px;
+    margin: auto;
+    display: block;
 }
 
 .upcoming-events {
@@ -652,4 +670,8 @@ hr {
 
 .one-lec img:hover {
     transform: translateY(-4px);
+}
+
+.teams {
+    width: 3000px;
 }

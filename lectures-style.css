@@ -118,9 +118,6 @@ hr {
         background-color: #7C9D96;   
     }
 
-    .navigation-links li:hover {
-        transform: translateY(0);
-    }
 
     .navigation-bar {
         flex-direction: column;
